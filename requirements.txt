@@ -1,0 +1,8 @@
+# Optional dependencies for GENESIS v3
+# Install with: pip install -r requirements.txt
+
+# For NumPy array support
+numpy>=1.20.0
+
+# For URL loading support
+requests>=2.25.0
