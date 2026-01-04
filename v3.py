@@ -1187,7 +1187,7 @@ Genetik algoritmalar kullanarak kodunuzu daha hızlı ve verimli hale getirir.
 
 Evrim tamamlandıktan sonra bir klasör oluşturulur:
 
-  genesis_fonksiyon_adi_20260104_123456/
+  genesis_fonksiyon_adi_YYYYMMDD_HHMMSS/
     ├── checkpoint_gen025.py    # Periyodik kayıtlar
     ├── checkpoint_gen050.py
     └── FINAL.py                # Son optimize edilmiş kod
@@ -1262,7 +1262,7 @@ algorithms to evolve your code into faster, more efficient versions.
 
 After evolution completes, a folder is created:
 
-  genesis_function_name_20260104_123456/
+  genesis_function_name_YYYYMMDD_HHMMSS/
     ├── checkpoint_gen025.py    # Periodic saves
     ├── checkpoint_gen050.py
     └── FINAL.py                # Final optimized code
