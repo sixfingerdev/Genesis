@@ -1119,11 +1119,180 @@ class Evolution:
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
+# HELP & DOCUMENTATION
+# ═══════════════════════════════════════════════════════════════════════════════
+
+def show_help(language='en'):
+    """Display help information in English or Turkish."""
+    
+    if language == 'tr':
+        # Turkish help
+        print(f"""
+{Colors.BOLD}{Colors.CYAN}╔═══════════════════════════════════════════════════════════════════════════════╗
+║                                                                               ║
+║                         GENESIS v3 - YARDIM                                   ║
+║                   Evrensel Kod Evrim Motoru                                   ║
+║                                                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝{Colors.ENDC}
+
+{Colors.BOLD}Bu Araç Ne İşe Yarıyor?{Colors.ENDC}
+{Colors.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Colors.ENDC}
+
+Genesis v3, Python kodunuzu otomatik olarak optimize eden bir araçtır. 
+Genetik algoritmalar kullanarak kodunuzu daha hızlı ve verimli hale getirir.
+
+{Colors.BOLD}Neler Yapabilir?{Colors.ENDC}
+{Colors.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Colors.ENDC}
+
+{Colors.GREEN}✓{Colors.ENDC} Fonksiyonları otomatik optimize eder
+{Colors.GREEN}✓{Colors.ENDC} Sınıf metodlarını geliştirir
+{Colors.GREEN}✓{Colors.ENDC} Performans karşılaştırması yapar
+{Colors.GREEN}✓{Colors.ENDC} Kodunuzu daha hızlı hale getirir
+{Colors.GREEN}✓{Colors.ENDC} Test senaryoları oluşturur
+{Colors.GREEN}✓{Colors.ENDC} Yerel dosya ve URL desteği
+{Colors.GREEN}✓{Colors.ENDC} Adım adım ilerleme gösterimi
+
+{Colors.BOLD}Kullanım Örnekleri:{Colors.ENDC}
+{Colors.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Colors.ENDC}
+
+  {Colors.YELLOW}# Yerel dosyadan fonksiyon optimize etme{Colors.ENDC}
+  python v3.py example.py calculate_sum
+
+  {Colors.YELLOW}# Sınıf metodu optimize etme{Colors.ENDC}
+  python v3.py mycode.py MyClass.my_method
+
+  {Colors.YELLOW}# URL'den kod yükleme{Colors.ENDC}
+  python v3.py https://raw.githubusercontent.com/user/repo/main/code.py function_name
+
+  {Colors.YELLOW}# İnteraktif mod{Colors.ENDC}
+  python v3.py
+
+  {Colors.YELLOW}# Yardım göster (Türkçe){Colors.ENDC}
+  python v3.py --help-tr
+
+  {Colors.YELLOW}# Yardım göster (İngilizce){Colors.ENDC}
+  python v3.py --help
+
+{Colors.BOLD}Ne Tür Optimizasyonlar Yapar?{Colors.ENDC}
+{Colors.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Colors.ENDC}
+
+  • Aritmetik optimizasyonlar (x ** 2 → x * x)
+  • Karşılaştırma basitleştirmeleri (len(x) == 0 → not x)
+  • Küme işlemleri optimizasyonu
+  • Döngü iyileştirmeleri
+  • Ve daha fazlası...
+
+{Colors.BOLD}Çıktı Dosyaları:{Colors.ENDC}
+{Colors.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Colors.ENDC}
+
+Evrim tamamlandıktan sonra bir klasör oluşturulur:
+
+  genesis_fonksiyon_adi_20260104_123456/
+    ├── checkpoint_gen025.py    # Periyodik kayıtlar
+    ├── checkpoint_gen050.py
+    └── FINAL.py                # Son optimize edilmiş kod
+
+{Colors.BOLD}Daha Fazla Bilgi:{Colors.ENDC}
+{Colors.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Colors.ENDC}
+
+README.md dosyasını okuyun veya:
+https://github.com/sixfingerdev/Genesis
+
+{Colors.GREEN}✨ İyi optimizasyonlar! ✨{Colors.ENDC}
+""")
+    else:
+        # English help
+        print(f"""
+{Colors.BOLD}{Colors.CYAN}╔═══════════════════════════════════════════════════════════════════════════════╗
+║                                                                               ║
+║                         GENESIS v3 - HELP                                     ║
+║                   Universal Code Evolution Engine                             ║
+║                                                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝{Colors.ENDC}
+
+{Colors.BOLD}What is this tool for?{Colors.ENDC}
+{Colors.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Colors.ENDC}
+
+Genesis v3 is an automatic code optimization tool for Python. It uses genetic 
+algorithms to evolve your code into faster, more efficient versions.
+
+{Colors.BOLD}What can it do?{Colors.ENDC}
+{Colors.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Colors.ENDC}
+
+{Colors.GREEN}✓{Colors.ENDC} Automatically optimize functions
+{Colors.GREEN}✓{Colors.ENDC} Improve class methods
+{Colors.GREEN}✓{Colors.ENDC} Compare performance metrics
+{Colors.GREEN}✓{Colors.ENDC} Make your code faster
+{Colors.GREEN}✓{Colors.ENDC} Generate test scenarios
+{Colors.GREEN}✓{Colors.ENDC} Load from local files or URLs
+{Colors.GREEN}✓{Colors.ENDC} Show step-by-step progress
+
+{Colors.BOLD}Usage Examples:{Colors.ENDC}
+{Colors.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Colors.ENDC}
+
+  {Colors.YELLOW}# Optimize a function from a local file{Colors.ENDC}
+  python v3.py example.py calculate_sum
+
+  {Colors.YELLOW}# Optimize a class method{Colors.ENDC}
+  python v3.py mycode.py MyClass.my_method
+
+  {Colors.YELLOW}# Load code from URL{Colors.ENDC}
+  python v3.py https://raw.githubusercontent.com/user/repo/main/code.py function_name
+
+  {Colors.YELLOW}# Interactive mode{Colors.ENDC}
+  python v3.py
+
+  {Colors.YELLOW}# Show help (Turkish){Colors.ENDC}
+  python v3.py --help-tr
+
+  {Colors.YELLOW}# Show help (English){Colors.ENDC}
+  python v3.py --help
+
+{Colors.BOLD}What kind of optimizations?{Colors.ENDC}
+{Colors.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Colors.ENDC}
+
+  • Arithmetic optimizations (x ** 2 → x * x)
+  • Comparison simplifications (len(x) == 0 → not x)
+  • Set operation improvements
+  • Loop enhancements
+  • And more...
+
+{Colors.BOLD}Output Files:{Colors.ENDC}
+{Colors.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Colors.ENDC}
+
+After evolution completes, a folder is created:
+
+  genesis_function_name_20260104_123456/
+    ├── checkpoint_gen025.py    # Periodic saves
+    ├── checkpoint_gen050.py
+    └── FINAL.py                # Final optimized code
+
+{Colors.BOLD}More Information:{Colors.ENDC}
+{Colors.CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{Colors.ENDC}
+
+Read the README.md file or visit:
+https://github.com/sixfingerdev/Genesis
+
+{Colors.GREEN}✨ Happy optimizing! ✨{Colors.ENDC}
+""")
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
 # MAIN
 # ═══════════════════════════════════════════════════════════════════════════════
 
 def main():
     """Ana program."""
+    
+    # Check for help flags
+    if len(sys.argv) > 1:
+        arg = sys.argv[1].lower()
+        if arg in ['--help', '-h', 'help']:
+            show_help('en')
+            sys.exit(0)
+        elif arg in ['--help-tr', '-htr', 'yardim', 'yardım']:
+            show_help('tr')
+            sys.exit(0)
     
     # Banner
     print(f"""

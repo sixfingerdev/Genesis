@@ -30,6 +30,19 @@ pip install requests   # For loading code from URLs
 
 ## 🚀 Usage
 
+### Getting Help
+```bash
+# Show help in English
+python v3.py --help
+python v3.py -h
+python v3.py help
+
+# Show help in Turkish (Türkçe yardım)
+python v3.py --help-tr
+python v3.py -htr
+python v3.py yardim
+```
+
 ### Basic Usage
 ```bash
 # From file
@@ -262,4 +275,33 @@ MIT License - see LICENSE file for details
 
 ---
 
+## 🇹🇷 Türkçe Özet / Turkish Summary
+
+**Genesis v3**, Python kodunu otomatik olarak optimize eden bir araçtır. Genetik algoritmalar kullanarak fonksiyonlarınızı ve metodlarınızı daha hızlı ve verimli hale getirir.
+
+### Temel Özellikler
+- 🎯 Otomatik kod optimizasyonu
+- 📊 Performans karşılaştırması
+- 🔄 Akıllı mutasyonlar
+- 📁 Dosya ve URL desteği
+- 📈 Gerçek zamanlı izleme
+- 🧪 Otomatik test oluşturma
+
+### Kullanım
+```bash
+# Yardım göster
+python v3.py --help-tr
+
+# Fonksiyon optimize et
+python v3.py ornekdosya.py fonksiyon_adi
+
+# İnteraktif mod
+python v3.py
+```
+
+Daha fazla bilgi için İngilizce README'yi okuyun veya `python v3.py --help-tr` komutunu çalıştırın.
+
+---
+
 **Note:** This is an experimental tool. Always review evolved code before using in production!
+
